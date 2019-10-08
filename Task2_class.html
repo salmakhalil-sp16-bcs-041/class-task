@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p>Class Task</p>
+	<p id="demo1">abc</p>
+<script type="text/javascript">
+class Student
+{
+    constructor (name,fathername,age)
+    {
+        this.name=name;
+        this.fathername=fathername;
+        this.age=age;
+    }
+    get get_name()
+{
+	return this.name
+}
+set set_name(name)
+{
+    this.name=name;
+}
+
+}
+class mgmStudent extends Student
+{
+    constructor (industryname)
+    {
+        this.industryname=industryname;
+        
+    }
+}
+class csStudent extends Student
+{
+    constructor (fyptitle)
+    {
+        this.fyptitle=fyptitle;
+        
+    }
+}
+
+std1=new Student("Ali","Farooq",24)
+std2=new Student("Saad","Tariq",22)
+std3=new Student("Adnan","Ahmad",23)
+a=std1.get_name;
+console.log(a);
+
+</script>
+</body>
+</html>
