@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p id="demo1">MultiLevel Inheritance</p> -->
+<script>
+
+class std1{
+	constructor(fname,lname,age){
+		this.fname=fname;
+		this.lname=lname;
+		this.age=age;
+	}
+	printdetail(){
+		console.log("std1 name is : "+this.fname +" :"+this.lname+ "age is :"+ 
+        this.age);
+	}
+}
+class std2 extends std1{
+	
+	constructor(fname,lname,age,program){
+		super(fname,lname,age)
+		this.program=program;
+	
+	}
+	printstd2()
+	{
+	
+		console.log("program is :" +this.program )
+	}
+}
+class std3 extends std2{
+	constructor(fname,lname,age,program,id){
+		super(fname,lname,age,program)
+		this.id=id;
+		
+	}
+	detail(){
+		console.log("Stdent name:"+this.fname+" :"+this.lname+"\n age:"+
+        this.age+"\nProgram"+this.program+"\nid:"+this.id);
+	}
+}
+
+std_detail=new std3("Ali","khan",23,"Mcs",3456);
+std_detail.detail()
+
+
+
+</script>
+</body>
+</html>
